@@ -1,0 +1,100 @@
+:root {
+  --primary: #4361ee;
+  --primary-dark: #3a56d4;
+  --secondary: #3f37c9;
+  --success: #4cc9f0;
+  --danger: #f72585;
+  --warning: #f8961e;
+  --info: #4895ef;
+  --light: #f8f9fa;
+  --dark: #212529;
+  --gray: #6c757d;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f5f7fa;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.card-header {
+  background-color: var(--primary);
+  color: white;
+  border-radius: 10px 10px 0 0 !important;
+  padding: 1.2rem;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  padding: 0.5rem 1.5rem;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.progress {
+  height: 10px;
+  border-radius: 5px;
+}
+
+.progress-bar {
+  background-color: var(--primary);
+}
+
+@media (max-width: 768px) {
+    .table-responsive table {
+        width: 100%;
+    }
+    
+    .table-responsive thead {
+        display: none;
+    }
+    
+    .table-responsive tr {
+        display: block;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid #dee2e6;
+    }
+    
+    .table-responsive td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem;
+        border-bottom: 1px dotted #dee2e6;
+    }
+    
+    .table-responsive td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        margin-right: 1rem;
+    }
+    
+    .table-responsive td:last-child {
+        border-bottom: none;
+    }
+    
+    .progress {
+        width: 100%;
+    }
+}
