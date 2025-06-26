@@ -1,9 +1,9 @@
 <?php
 // Konfigurasi Database
 $host = 'localhost';
-$db   = 'divisi';
-$user = 'divisi';
-$pass = 'divisi';
+$db   = '';
+$user = '';
+$pass = '';
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
